@@ -7,7 +7,7 @@ public class Main {
         String PUB_FILE = System.getenv("PCD_PUB_FILE");
         String PRV_FILE = System.getenv("PCD_PRV_FILE");
         String enc_file = args[0];
-        String dec_file = enc_file + "dec" ;
+        String dec_file = enc_file;
         Cpabe bridge = new Cpabe();
         try {
             bridge.dec(PUB_FILE, PRV_FILE, enc_file, dec_file);
