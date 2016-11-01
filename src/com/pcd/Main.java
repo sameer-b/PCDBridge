@@ -4,9 +4,9 @@ import cpabe.Cpabe;
 public class Main {
 
     public static void main(String[] args) {
-        String PUB_FILE = System.getenv("PCD_PUB_FILE");
-        String PRV_FILE = System.getenv("PCD_PRV_FILE");
-        String enc_file = args[0];
+        String PUB_FILE = args[0];
+        String PRV_FILE = args[1];
+        String enc_file = args[2];
         String dec_file = enc_file;
         Cpabe bridge = new Cpabe();
         try {
